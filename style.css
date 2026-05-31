@@ -1,0 +1,181 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Playwrite GB S", cursive;
+    margin: 0;
+    color: black;
+}
+@keyframes anm {
+    from {
+        opacity: 0;
+    }
+    to {
+
+    }
+}
+dialog {
+    padding: 30px;
+    border: 1px rgb(192, 206, 220) solid;
+    border-radius: 20px;
+    background-color: rgba(12, 12, 12, 0.623);
+    backdrop-filter: blur(5px);
+}
+nav a {
+    text-decoration: none;
+}
+dialog button {
+    display: inline-block;
+    background-color: rgb(81, 92, 103);
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px rgb(29, 29, 29) solid;
+}
+header {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background:  white;
+    border: 1px slategrey solid;
+    color: black;
+    border-radius: 50px;
+    z-index: 1000;
+}
+.any {
+    display: flex;
+    justify-content: center;
+    animation: anm 5s ease;
+}
+header nav a {
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+header button {
+    display: none;
+}
+header nav a:hover {
+    background-color: rgb(49, 49, 48);
+}
+.home {
+    color: white;
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    margin-top: 100px;
+}
+.home a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(182, 181, 181);
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.home .content .p1, .p2{
+    display: inline-block;
+}
+.home .content .p1 {
+    margin-right: 100px;
+}
+.myprinfo {
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 150px;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cards .card {
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    width: 200px;
+}
+.aboutme {
+    color: rgb(0, 0, 0);
+    margin-bottom: 150px;
+}
+.aboutme .cards .card {
+    background-color: rgb(73, 126, 170);
+    color: white;
+}
+.aboutme .cards .card a {
+    color: white;
+    text-decoration: none;
+}
+.cards2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards2 .card2 {
+    width: 500px;
+}
+.cards3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 150px;
+}
+.cards3 .card3 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 173, 167);
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    width: 300px;
+}
+@media(max-width: 764px) {
+    .home .content .p1{
+        margin-right: 0;
+    }
+}
+@media(max-width: 619px) {
+    .cards2 .card2 {
+    width: 300px;
+}
+header nav {
+    display: none;
+}
+header h3 {
+    font-size: 18px;
+}
+header button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+}
